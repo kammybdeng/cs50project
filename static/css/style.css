@@ -1,0 +1,122 @@
+html {
+    height:100%;
+    width:100%;
+    }
+
+body {
+    background-color: rgb(200, 240, 240, .2);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+}
+
+.flashMessage {
+    /* margin-top: 52px; */
+    font-size: 15px;
+}
+
+.searchbox {
+    /* margin-top: 52px; */
+    padding: 10px 100px;
+    border: 3px;
+}
+.searchbox-weather {
+    /* margin-top: 52px; */
+    padding: 10px 100px;
+    border: 3px;
+    text-align: center;
+}
+.searchform {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.current-forecast {
+    text-align: left;
+    padding: 20px;
+}
+
+
+.five-day-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin-top: 52px;
+}
+ .box {
+    padding: 5px;
+    margin: 20px;
+    text-align: center;
+    background-color: rgb(100, 137, 260, .3);
+    width: 180px;
+    height: 150px;
+ }
+
+
+legend {
+    color: #FF7F50;
+    font: 2em sans-serif;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.navbar {
+   background-color: #404969;
+
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+label {
+    font-size:1.25rem;
+    margin-bottom: 10px;
+}
+
+a {
+    font-size: 1rem;
+}
+
+.cityTitle {
+    color: #FF7F50;
+    font-size: 3rem;
+}
+
+.degrees {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 15px 0px;
+}
+
+.degrees-daily {
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin: 15px 0px;
+}
+
+.currentTime {
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
+.currentTime-daily {
+    font-size: 1.5rem;
+    margin: 10px 0px;
+    font-weight: 800;
+}
+
+
+.description {
+    font-size: 1.2rem;
+    margin: 5px 0px;
+}
+
+
+
+.btn {
+    background-color: beige;
+}

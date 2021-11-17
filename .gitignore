@@ -1,0 +1,10 @@
+# Config File
+.env
+
+# DB
+temp.db
+
+# Misc
+.DS_Store
+.idea
+__pycache__

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h3>Saved Cities</h3>
+<div>
+    {% if cities %}
+    {% for city in cities %}
+    <ul>
+        <li> <a id="{{ city.city_id }}" href="/?id={{ city.city_id }}&name={{ city.name }}">
+                {{ city.name | title }}, {{ city.state | upper }}, {{ city.country | upper }} </a>
+        </li>
+    </ul>
+    {% endfor %}
+</div>
+{% else %}
+<p>No Cities Saved</p>
+{% endif %}
+{% endblock content %}
