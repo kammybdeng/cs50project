@@ -8,7 +8,7 @@ from cs50 import SQL
 from flask_session import Session
 from tempfile import mkdtemp
 from flask_helper import login_required
-from flask_wtf.csrf import CSRFProtect
+# from flask_wtf.csrf import CSRFProtect
 from helper import forecast_api_request, get_city
 import pdb
 
@@ -71,7 +71,7 @@ def fetch():
     # city_name = request.json['name'].lower()
     url = f'http://api.openweathermap.org/data/2.5/weather?id={city_id}&appid={API_KEY}'
 
-     # OpenWeather response
+    # OpenWeather response
     response = requests.get(url).json()
     if response.get('cod') != 200:
         message = response.get('message', '')

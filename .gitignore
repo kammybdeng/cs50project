@@ -4,6 +4,9 @@
 # DB
 temp.db
 
+# Virtual Env
+env/
+
 # Misc
 .DS_Store
 .idea
