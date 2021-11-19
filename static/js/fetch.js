@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     // filter city
+    $('.searchresults').css('display', 'none');
     $('#cityInput').keyup(filterCity);
 
     // If query is provided - linked from account.html

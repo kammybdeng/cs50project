@@ -28,6 +28,7 @@ function filterCity() {
                     a.innerHTML = `${data[i]['name']}, ${data[i]['state']}, ${data[i]['country']}`;
                     li.appendChild(a);
                     ul.appendChild(li);
+                    $('.searchresults').css('display', 'block');
                 }
             }
 
@@ -36,5 +37,6 @@ function filterCity() {
     }
     else {
         ul.innerHTML = '';
+        $('.searchresults').css('display', 'none')
     }
 };

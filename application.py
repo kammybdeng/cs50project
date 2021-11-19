@@ -157,8 +157,9 @@ def logout():
 @login_required
 def account():
     cities = db.execute("select * from cities where user_id = ?", session["user_id"])
+    cities = cities[::-1]
     #cities = [i["name"].title() for i in user_cities]
-    print(cities)
+
     return render_template('account.html', title='Account', cities=cities)
 
 
@@ -242,4 +243,4 @@ def init_db():
 
 if __name__ == '__main__':
     init_db()
-    app.run(debug=False)
+    app.run(debug=True)
