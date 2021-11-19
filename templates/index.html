@@ -1,21 +1,20 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<!--
-<form method="POST" action="/fetch" class="searchbox-weather">
-    <fieldset class="form-group searchform">
-        <label class="form-control-label">City</label>
-        <input type="text" id="city" name="city" class="form-control" autofocus placeholder="City name">
-    </fieldset>
-    <input id="city_submit" type="submit" class="btn btn-outline-info" value="Submit">
-</form> -->
+
 <div class="searchform">
-    <label class="form-control-label">City</label>
-    <input type="text" id="cityInput" placeholder="Search for city" title="Type in a city">
+    <div>
+        <input type="text" id="cityInput" placeholder="Search city" title="Search city"
+            style="width: 100%; height: 35px; border-radius: 10px;">
+        <div class="searchresults">
+            <ul id="myUL">
+            </ul>
+        </div>
+    </div>
 </div>
 
-<ul id="myUL">
-</ul>
+
+
 
 {% raw %}
 <script id="result_template" type="text/html">
@@ -39,8 +38,10 @@
     {{ /current }}
     </div>
 </div>
-
-
+<div class="forecast" style="padding: 20px; margin: 30px;">
+    <div style="font-size: 20px; margin: 10px;">
+        Five days Forecast
+    </div>
     <div class="five-day-window">
         {{ #forecast }}
         <div class="box">
@@ -50,6 +51,9 @@
         </div>
         {{ /forecast }}
         </div>
+</div>
+
+
 </script>
 
 {% endraw %}

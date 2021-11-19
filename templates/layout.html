@@ -21,8 +21,9 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+  <div class="container"></div>
+  <div class="site-header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-steel">
       <!-- <div class="container"> -->
       <a class="navbar-brand mr-4" href="{{ url_for('index') }}">Weather Site</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
@@ -45,8 +46,8 @@
       </div>
       <!-- </div> -->
     </nav>
-  </header>
-  <main role="main" class="container">
+  </div>
+  <div class="content">
 
     {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}
@@ -59,7 +60,9 @@
     {% endwith %}
     {% block content %}{% endblock %}
 
-  </main>
+  </div>
+
+  </div>
 
 
   <!-- Optional JavaScript; choose one of the two! -->
