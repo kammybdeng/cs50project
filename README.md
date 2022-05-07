@@ -1,4 +1,7 @@
 # Weather Forecast Application
+**Video Demo**: https://youtu.be/NcADcLgrSPE
+
+
 A weather forecast application that allows users to search for a city's weather. Logged in users can save and delete their favorite cities. The application retrieves weather data from a third party API[Open Weather API](https://openweathermap.org/api).
 Final Project for Harvard's [CS50x](https://cs50.harvard.edu/x/2021/)
 
